@@ -40,10 +40,11 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 0}
+    customRenderPipeline: {fileID: 11400000, guid: ffd357150bec39742b374422c0bd29ed,
+      type: 2}
     excludedTargetPlatforms: []
   - serializedVersion: 2
-    name: Quest
+    name: ' Quest 2'
     pixelLightCount: 1
     shadows: 0
     shadowResolution: 0
@@ -76,7 +77,8 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 0}
+    customRenderPipeline: {fileID: 11400000, guid: 1140794309be6844c95d9fa440186086,
+      type: 2}
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
     Android: 1
