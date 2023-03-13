@@ -22,4 +22,4 @@ MonoBehaviour:
   bypass3DAudio: 0
   roomMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1847
