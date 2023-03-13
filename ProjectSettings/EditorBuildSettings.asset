@@ -23,9 +23,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BNG Framework/Scenes/Quest Demo.unity
     guid: eac0312c32df12949a47d07747a9d1cd
-  - enabled: 1
+  - enabled: 0
     path: Assets/BNG Framework/Integrations/Oculus Integration/Hand Tracking.unity
     guid: 8dee22924e05c964880504e0eabc4550
+  - enabled: 1
+    path: Assets/_Practice_/Scenes/HandTracking.unity
+    guid: 0f57f141188c9f04380b4af6ad61890a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e829de9183bd0934ba03319b5167b64f,
       type: 2}
