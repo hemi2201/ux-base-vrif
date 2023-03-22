@@ -16,7 +16,11 @@ public class RoomManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.AutomaticallySyncScene = true;
 
-        if (PhotonNetwork.IsConnectedAndReady)
+        if (!PhotonNetwork.IsConnectedAndReady)
+        {
+            PhotonNetwork.ConnectUsingSettings();
+        }
+        else
         {
             PhotonNetwork.JoinLobby();
         }
@@ -51,6 +55,12 @@ public class RoomManager : MonoBehaviourPunCallbacks
     {
         Debug.Log(message);
         CreateAndJoinRoom();
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        Debug.Log("Connected to servers again.");
+        PhotonNetwork.JoinLobby();
     }
 
     public override void OnCreatedRoom()
