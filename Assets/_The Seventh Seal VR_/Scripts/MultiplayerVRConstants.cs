@@ -1,18 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class MultiplayerVRConstants : MonoBehaviour
+
+public class MultiplayerVRConstants
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public const string MAP_TYPE_KEY = "map";
+    public const string MAP_TYPE_VALUE_HOVSHALLAR = "hovshallar";
 }

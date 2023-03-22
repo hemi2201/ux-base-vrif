@@ -13,9 +13,10 @@ public class RoomManagerEditorScript : Editor
         EditorGUILayout.HelpBox("This script is responsible for creating and joining rooms", MessageType.Info);
 
         RoomManager roomManager = (RoomManager)target;
-        if (GUILayout.Button("Join Random Room"))
+
+        if (GUILayout.Button("Join Hovs Hallar"))
         {
-            roomManager.JoinRandomRoom();
+            roomManager.OnEnterButtonPressed_HovsHallar();
         }
     }
 }
