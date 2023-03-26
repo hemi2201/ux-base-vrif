@@ -11,8 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_The Seventh Seal VR_/Scenes/Home Room.unity
     guid: 35efcff5292f7a443948d2262d9ba109
-  - enabled: 1
-    path: Assets/_The Seventh Seal VR_/Scenes/Hovs Hallar.unity
+  - enabled: 0
+    path: Assets/_The Seventh Seal VR_/Scenes/Hovs Hallar Old.unity
     guid: 84b8a9a39fdeaad4787101a30ba6f83d
   - enabled: 0
     path: Assets/BNG Framework/Integrations/PUN/MPDemo.unity
@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_The Seventh Seal VR_/Scenes/Hovs Hallar Ver 2.unity
     guid: 853c82714cfbbf24ea58285c3636ba58
+  - enabled: 1
+    path: Assets/_The Seventh Seal VR_/Scenes/Hovs Hallar.unity
+    guid: ec41463e18dfd544781bad867a8efb08
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e829de9183bd0934ba03319b5167b64f,
       type: 2}
