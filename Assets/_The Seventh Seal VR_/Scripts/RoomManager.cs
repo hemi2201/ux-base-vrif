@@ -4,6 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
+using BNG;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
@@ -91,6 +92,8 @@ public class RoomManager : MonoBehaviourPunCallbacks
                 */
             }
         }
+
+        
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)

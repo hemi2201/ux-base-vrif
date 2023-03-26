@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/_The Seventh Seal VR_/Scenes/Login Scene.unity
     guid: ee99fd91778cb764b94f01a79e5f91d3
-  - enabled: 0
+  - enabled: 1
     path: Assets/_The Seventh Seal VR_/Scenes/Home Room.unity
     guid: 35efcff5292f7a443948d2262d9ba109
-  - enabled: 0
+  - enabled: 1
     path: Assets/_The Seventh Seal VR_/Scenes/Hovs Hallar.unity
     guid: 84b8a9a39fdeaad4787101a30ba6f83d
   - enabled: 0
     path: Assets/BNG Framework/Integrations/PUN/MPDemo.unity
     guid: 1ef291d4030a6484f8bc6edeae91dda9
-  - enabled: 1
+  - enabled: 0
     path: Assets/_The Seventh Seal VR_/Scenes/Hovs Hallar Ver 2.unity
     guid: 853c82714cfbbf24ea58285c3636ba58
   m_configObjects:
