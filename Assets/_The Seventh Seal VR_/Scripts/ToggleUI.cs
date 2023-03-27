@@ -13,7 +13,7 @@ namespace BNG {
         public InputActionReference InputAction = default;
         public GameObject ToggleObject = default;
         Canvas uICanvas;
-        bool canvasEnabled = false;
+        bool canvasEnabled = true;
 
         private void Start()
         {
