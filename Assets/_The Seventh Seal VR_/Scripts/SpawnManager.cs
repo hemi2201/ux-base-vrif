@@ -11,7 +11,7 @@ public class SpawnManager : MonoBehaviour
     public Transform[] startPos;
     public Transform XRRig;
     public Vector3 spawnPosition;
-    public Vector3 spawnRotation;
+    public Quaternion spawnRotation;
 
     [Tooltip("Name of the Player object to spawn. Must be in a /Resources folder.")]
     public string RemotePlayerObjectName = "RemotePlayer";
@@ -23,16 +23,14 @@ public class SpawnManager : MonoBehaviour
         {
             XRRig.position = startPos[0].position;
             spawnPosition = startPos[0].position;
-            spawnRotation = new Vector3(0, 0, 0);
         }
         else if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
+            spawnRotation = startPos[1].localRotation;
+
             XRRig.position = startPos[1].position;
-            XRRig.localRotation = startPos[1].localRotation;
+            XRRig.localRotation = spawnRotation;
             spawnPosition = startPos[1].position;
-
-            
-
         }
 
         if (PhotonNetwork.IsConnectedAndReady)
@@ -40,7 +38,7 @@ public class SpawnManager : MonoBehaviour
             //PhotonNetwork.Instantiate(GenericVRPlayerPrefab.name, spawnPosition, Quaternion.Euler(0.0f, 90.0f, 0f));
 
             // Network Instantiate the object used to represent our player. This will have a View on it and represent the player         
-            GameObject player = PhotonNetwork.Instantiate(RemotePlayerObjectName, spawnPosition, Quaternion.identity, 0);
+            GameObject player = PhotonNetwork.Instantiate(RemotePlayerObjectName, spawnPosition, spawnRotation, 0);
             BNG.NetworkPlayer np = player.GetComponent<BNG.NetworkPlayer>();
             if (np)
             {
