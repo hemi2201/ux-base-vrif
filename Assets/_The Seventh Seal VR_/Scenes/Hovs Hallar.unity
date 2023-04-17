@@ -4538,6 +4538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 948853674}
   - component: {fileID: 948853673}
+  - component: {fileID: 948853675}
   m_Layer: 0
   m_Name: Ambiance
   m_TagString: Untagged
@@ -4554,7 +4555,8 @@ AudioSource:
   m_GameObject: {fileID: 948853672}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -6775697128487325688, guid: 70351e64844170c42bce866cce7e6026,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4e4b7907f1c76e94ca1d1a56d7e2bc29, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.516
@@ -4656,6 +4658,18 @@ Transform:
   m_Father: {fileID: 856152464}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &948853675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948853672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb001ad917b86f148a2c85acdd0d5c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &980514257
 GameObject:
   m_ObjectHideFlags: 0
